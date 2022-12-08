@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/i1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.8"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="Welcome To"
+                    android:textStyle="italic"
+                    android:textSize="80px"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal|bottom"/>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="Sowrd ART Online"
+                    android:textStyle="italic"
+                    android:textSize="80px"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="The Journey Begins"
+                    android:textStyle="italic"
+                    android:textSize="80px"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal|top"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.2"
+                android:weightSum="1"
+                android:background="@color/cardview_shadow_start_color">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:weightSum="1"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username"
+                        android:layout_margin="10dp"
+                        android:inputType="text"
+                        android:drawableLeft="@drawable/person"
+                        android:drawablePadding="10dp"
+                        android:paddingHorizontal="10dp"
+                        android:background="@drawable/edittext"
+                        android:layout_weight="0.5"/>
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:layout_margin="10dp"
+                        android:paddingHorizontal="10dp"
+                        android:inputType="textPassword"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/edittext"
+                        android:layout_weight="0.5"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SIGN IN"
+                        android:textColor="@color/white"
+                        android:textSize="50px"
+                        android:layout_weight="0.5"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.5"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="New User?"
+                            android:textColor="@color/white"
+                            android:textSize="50px"
+                            android:layout_margin="5dp"
+                            android:gravity="right|center_vertical"/>
+
+                        <Button
+                            android:id="@+id/btn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SIGN UP"
+                            android:textColor="@color/white"
+                            android:textSize="50px"
+                            android:layout_weight="0.5"
+                            android:layout_margin="5dp"
+                            android:gravity="left|center_vertical"
+                            android:background="@color/cardview_shadow_end_color"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
